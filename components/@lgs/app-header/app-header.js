@@ -1,10 +1,10 @@
 /*
  * @Author: Li-HONGYAO
  * @Date: 2020-11-19 10:06:42
- * @LastEditTime: 2021-01-24 00:51:08
+ * @LastEditTime: 2021-01-24 02:15:40
  * @LastEditors: Li-HONGYAO
  * @Description:
- * @FilePath: /dp-ksapp-2/components/@lgs/app-header/app-header.js
+ * @FilePath: /ks-app-template/components/@lgs/app-header/app-header.js
  */
 
 Component({
@@ -139,6 +139,11 @@ Component({
         ["iconStyle.backgroundColor"]: capsuleBackgroundColor,
       });
     },
+    // methods
+    getHeight() {
+      return this.data.height;
+    },
+    // events
     goBack() {
       ks.navigateBack({
         delta: 1,

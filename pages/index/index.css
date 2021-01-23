@@ -1,12 +1,22 @@
 
+
+/* 轮播图 */
+.banners {
+  height: 246rpx;
+}
+.banners image {
+  height: 246rpx;
+}
+.banners .dot-horizontal  {
+  margin: 0 14rpx;
+}
+
+
 .item {
   width: 100%;
   height: 300rpx;
   background-color: orange;
   margin-bottom: 30rpx;
-}
-.box {
-  width: 100%;
-  height: 200rpx;
-  background-color: #000000;
+  opacity: .75;
+  border-radius: 16rpx;
 }

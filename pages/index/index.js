@@ -1,12 +1,14 @@
 /*
  * @Author: Li-HONGYAO
  * @Date: 2021-01-23 16:37:35
- * @LastEditTime: 2021-01-24 02:00:25
+ * @LastEditTime: 2021-01-24 02:21:28
  * @LastEditors: Li-HONGYAO
  * @Description: 
  * @FilePath: /ks-app-template/pages/index/index.js
  */
 
+
+ import Tools from '../../tools/index';
 
 Page({
   data: {
@@ -19,11 +21,11 @@ Page({
     ],
   },
   onReady: function () {
-    this.appHeader = this.selectComponent("#app-header");
     this.scroll = this.selectComponent("#scroll");
-  },
-  onScroll({detail: { scrollTop }}) {
-    this.appHeader.setOpacity(scrollTop);
+    this.appHeader = this.selectComponent("#app-header");
+    this.setData({
+      height: Tools.getWindowHeight() - this.appHeader.getHeight() + 'px'
+    });
   },
   onLoadMore() {
     console.log('__上拉加载更多__');
