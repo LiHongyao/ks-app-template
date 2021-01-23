@@ -1,0 +1,14 @@
+.lg-no-data  {
+  padding-top: 246rpx;
+  text-align: center;
+}
+.lg-no-data__img {
+  width: 291rpx;
+  height: 254rpx;
+}
+.lg-no-data__tips {
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #C9C9C9;  
+}

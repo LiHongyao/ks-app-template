@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/found/found",
+    "pages/shop/shop",
+    "pages/service/service",
+    "pages/mine/mine",
+    "pages/test/test"
+  ],
+  "window": {
+    "disableScroll": true,
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "快手小程序",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "selectedColor": "#FF9900",
+    "color": "#CECECE",
+    "list": [{
+      "text": "首页",
+      "pagePath": "pages/index/index",
+      "iconPath": "./assets/icon_index.png",
+      "selectedIconPath": "./assets/icon_index_sel.png"
+    },{
+      "text": "发现",
+      "pagePath": "pages/found/found",
+      "iconPath": "./assets/icon_found.png",
+      "selectedIconPath": "./assets/icon_found_sel.png"
+    },{
+      "text": "店主",
+      "pagePath": "pages/shop/shop",
+      "iconPath": "./assets/icon_shop.png",
+      "selectedIconPath": "./assets/icon_ shop_sel.png"
+    },{
+      "text": "服务",
+      "pagePath": "pages/service/service",
+      "iconPath": "./assets/icon_service.png",
+      "selectedIconPath": "./assets/icon_service_sel.png"
+    },{
+      "text": "我的",
+      "pagePath": "pages/mine/mine",
+      "iconPath": "./assets/icon_mine.png",
+      "selectedIconPath": "./assets/icon_mine_sel.png"
+    }]
+  }
+}

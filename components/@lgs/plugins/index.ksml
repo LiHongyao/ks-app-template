@@ -1,0 +1,13 @@
+<template name="lg-plugins">
+  <view ks:if="{{lg}}" class="lg-wrapper">
+    <!-- toast component template -->
+    <view class="lg-toast" ks:if="{{lg.toast.visible}}">
+      <view class="lg-toast__content {{lg.toast.loading ? 'loading' : ''}}">
+        <image class="lg-toast__loading" ks:if="{{lg.toast.loading}}" src="https://img.meituan.net/csc/1ca43e11d5b3b1801be90c86b51289066424.png"  />
+        <view class="lg-toast__tips">{{lg.toast.message}}</view>
+      </view>
+    </view>
+
+
+  </view>
+</template>

@@ -1,0 +1,12 @@
+
+.item {
+  width: 100%;
+  height: 300rpx;
+  background-color: orange;
+  margin-bottom: 30rpx;
+}
+.box {
+  width: 100%;
+  height: 200rpx;
+  background-color: #000000;
+}

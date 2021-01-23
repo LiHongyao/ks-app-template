@@ -1,0 +1,7 @@
+<view class="lg-loading" style="padding-top: {{top}}rpx;">
+  <view class="lg-loading__ct">
+    <image class="lg-loading__logo" src="{{icon}}" />
+    <image class="lg-loading__icon" src="./images/border.png" />
+  </view>
+  <view ks:if={{showTips}} class="lg-loading__tips">{{tips}}</view>
+</view>

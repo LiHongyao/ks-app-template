@@ -1,0 +1,30 @@
+<!-- 头部 -->
+<app-header id="app-header" title="快手小程序" background="blue" tintColor="#fff" />
+<!-- 内容 -->
+<scroll id="scroll" height="500px" bind:scroll="onScroll" bind:load="onLoadMore" bind:refresh="onRefresh">
+  <!-- 轮播图 -->
+  <swiper class="mt-48 banners" indicator-active-color="#FFFFFF" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" interval="{{3000}}">
+    <block ks:for="{{banners}}" ks:key="{{index}}">
+      <swiper-item>
+        <view class="px-30">
+          <image src="{{item.img}}" />
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+    <view class="item"></view>
+  </view>
+</scroll>

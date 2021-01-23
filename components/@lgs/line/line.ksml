@@ -1,0 +1,5 @@
+<view class="lg-line">
+  <view class="lg-line__g"></view>
+  <view class="lg-line__title">{{title}}</view>
+  <view class="lg-line__g"></view>
+</view>

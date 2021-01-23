@@ -1,0 +1,4 @@
+<view class="lg-no-data">
+  <image class="lg-no-data__img" src="./images/no-data.png" />
+  <view wx:if="{{tips}}" class="lg-no-data__tips">{{tips}}</view>
+</view>

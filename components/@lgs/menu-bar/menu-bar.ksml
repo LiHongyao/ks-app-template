@@ -1,0 +1,13 @@
+<view class="lg-menu-bar {{customClass}}" style="justify-content: {{mode === 'around' ? 'space-around' : 'flex-start'}};background-color: {{backgroundColor}}">
+  <view 
+    class="lg-menu-bar__item {{index === currentIndex ? 'lg-menu-bar__item_selected' : ''}}" 
+    ks:for="{{menus}}" 
+    ks:key="item" 
+    style="color: {{index === currentIndex ? selectedColor : '#828282'}}"
+    data-index="{{index}}" 
+    bind:tap="onItemTap"
+  >
+    {{item}}
+  </view>
+  <!-- <view class="lg-menu-bar__cursor" style="left:{{locations[currentIndex]}}px;" /> -->
+</view>

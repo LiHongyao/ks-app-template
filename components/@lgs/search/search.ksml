@@ -1,0 +1,23 @@
+<view class="lg-search ">
+  <!-- 搜索图标 -->
+  <image src="{{iconPath}}" class="lg-search__icon"/>
+  <!-- 搜索输入框 -->
+  <input 
+    type="text"
+    value="{{value}}"
+    class="lg-search__input" 
+    style="color:{{color}};"
+    placeholder="{{placeholder}}"
+    placeholder-style="{{placeholderStyle}}"
+    confirm-type="search"
+    bindinput='onInput'
+    bindconfirm="onConfirm"
+  >
+  <!-- 清除按钮 -->
+  <image 
+    ks:if={{allowClear}} 
+    src="{{clearPath}}" 
+    class="lg-search__clear"
+    bind:tap="onClear"
+  />
+</view>

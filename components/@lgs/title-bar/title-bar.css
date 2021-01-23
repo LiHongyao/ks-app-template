@@ -1,0 +1,31 @@
+.lg-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 12rpx;
+}
+.__title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333333;
+}
+.__subTitle {
+  font-size: 24rpx;
+  color: #333333;
+}
+.__link {
+  width: 12rpx;
+  height: 24rpx;
+  margin-left: 12rpx;
+}

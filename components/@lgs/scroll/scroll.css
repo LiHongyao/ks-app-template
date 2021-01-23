@@ -1,0 +1,16 @@
+.__refresh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.__load-more {
+  padding-bottom: 40rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666666;
+}
+

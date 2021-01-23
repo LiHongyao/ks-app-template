@@ -1,0 +1,8 @@
+<view class="list-item">
+  <view>
+    <view class="__title">成语答题闯关</view>
+    <view class="__desc">选择对的成语组合，看你的成语水平</view>
+    <view class="__bottom">332.4W人在玩</view>
+  </view>
+  <image src="https://img.meituan.net/csc/9d9300f5dedcf9bd8c72f4f03451629315426.png" />
+</view>

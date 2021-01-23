@@ -1,0 +1,28 @@
+.lg-search {
+  width: 100%;
+  padding: 0 16rpx;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 36rpx;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lg-search__icon {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 16rpx;
+  flex-shrink: 0;
+}
+
+.lg-search__input {
+  flex: 1;
+}
+
+.lg-search__clear {
+  width: 36rpx;
+  height: 36rpx;
+  opacity: 0.75;
+  margin-left: 30rpx;
+}

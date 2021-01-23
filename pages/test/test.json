@@ -1,0 +1,7 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "app-header": "../../components/@lgs/app-header/app-header",
+    "scroll":"../../components/@lgs/scroll/scroll"
+  }
+}

@@ -1,0 +1,10 @@
+<view class="lg-title-bar">
+  <view class="__item">
+    <image ks:if="{{iconPath}}" class="__icon" src="{{iconPath}}"></image>
+    <text class="__title">{{title}}</text>
+  </view>
+  <view class="__item">
+    <text class="__subTitle">{{subTitle}}</text>
+    <image ks:if="{{linkPath}}" class="__link" src="{{linkPath}}"></image>
+  </view>
+</view>

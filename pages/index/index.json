@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "app-header": "../../components/@lgs/app-header/app-header",
+    "search": "../../components/@lgs/search/search",
+    "title-bar": "../../components/@lgs/title-bar/title-bar",
+    "list-item": "../../components/list-item/list-item",
+    "scroll":"../../components/@lgs/scroll/scroll"
+  }
+}

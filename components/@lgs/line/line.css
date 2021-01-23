@@ -1,0 +1,21 @@
+.lg-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lg-line__g {
+  flex: 1;
+  height: 2rpx;
+  background: #eeeeee;
+  border-radius: 5rpx;
+}
+
+.lg-line__title {
+  margin: 48rpx 12rpx;
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #dddddd;
+  line-height: 24rpx;
+}

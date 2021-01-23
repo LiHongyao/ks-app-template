@@ -1,0 +1,23 @@
+<scroll-view 
+  class="lg-scroll" 
+  scroll-y="{{true}}" 
+  style="height:{{height ? height : '100vh'}};"
+  lower-threshold="{{1}}"
+  bindscroll="onScroll"
+  bindscrolltolower="onLoad"
+  catch:touchstart="onTouchStart"
+  catch:touchmove="onTouchMove"
+  catch:touchend="onTouchEnd"
+>
+  <!-- 下拉刷新 -->
+  <view style='height:{{refreshHeight}}px' class='__refresh'>{{refreshText}}</view>
+  <!-- 展示内容 -->
+  <slot></slot>
+  <!-- 上拉加载 -->
+  <view class="__load-more">
+    {{ loadMoreStatus === 0 ? '上拉加载更多' : (loadMoreStatus === 1 ? '数据加载中...' : (loadMoreStatus === 2 ? '数据加载完成' : (loadMoreStatus === 3 ? '没有更多啦~' : '')))}}
+  </view>
+</scroll-view>
+
+
+

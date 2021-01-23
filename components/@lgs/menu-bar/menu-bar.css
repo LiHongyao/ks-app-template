@@ -1,0 +1,26 @@
+.lg-menu-bar {
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.lg-menu-bar__item {
+  margin: 0 38rpx;
+  font-size: 28rpx;
+}
+.lg-menu-bar__cursor {
+  width: 104rpx;
+  height: 8rpx;
+  border-radius: 6rpx;
+  transition: all .25s linear;
+  background-color: #F82F5C;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.lg-menu-bar__item_selected {
+  font-weight: bold;
+}
+
+
