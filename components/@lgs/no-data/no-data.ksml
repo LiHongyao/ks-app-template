@@ -1,4 +1,4 @@
 <view class="lg-no-data">
-  <image class="lg-no-data__img" src="./images/no-data.png" />
-  <view wx:if="{{tips}}" class="lg-no-data__tips">{{tips}}</view>
+  <image class="__img" src="{{image}}" />
+  <view ks:if="{{tips}}" class="__tips">{{tips}}</view>
 </view>

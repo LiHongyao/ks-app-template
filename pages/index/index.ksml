@@ -3,8 +3,12 @@
   <app-header id="app-header" title="快手小程序" background="linear-gradient(to right, #FFD24D, #FFB80D)" tintColor="#fff" />
   <!-- 内容 -->
   <scroll id="scroll" height="{{height}}" bind:scroll="onScroll" bind:load="onLoadMore" bind:refresh="onRefresh">
+    <!-- 搜索 -->
+    <view class="px-30">
+       <search placeholder="测测你的心理年龄" placeholderStyle="font-size: 28rpx; color: #BBBBBB;" allowClear="{{false}}" iconPath="https://img.meituan.net/csc/83edd526fc8d0487bb5da0e50320f9421239.png"></search>
+    </view>
     <!-- 轮播图 -->
-    <swiper class="mt-48 banners" indicator-active-color="#FFFFFF" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" interval="{{3000}}">
+    <swiper class="mt-32 banners" indicator-active-color="#FFFFFF" indicator-dots="{{true}}" autoplay="{{true}}" circular="{{true}}" interval="{{3000}}">
       <block ks:for="{{banners}}" ks:key="{{index}}">
         <swiper-item>
           <view class="px-30">
@@ -13,20 +17,15 @@
         </swiper-item>
       </block>
     </swiper>
-    <view class="px-30 mt-28">
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-      <view class="item"></view>
-    </view>
+    <!-- 内容 -->
+    <loading ks:if="{{!list}}" />
+    <block ks:else>
+      <no-data ks:if="{{list.length === 0}}" tips="没有更多数据~" />
+      <block ks:else>
+        <view class="list px-30">
+          <list-item ks:for="{{list}}" ks:key="{{index}}" />
+        </view>
+      </block>
+    </block>
   </scroll>
 </view>

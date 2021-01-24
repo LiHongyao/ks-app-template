@@ -1,0 +1,8 @@
+<view class="container">
+  <scroll id="scroll" bind:refresh="onRefresh">
+    <loading ks:if="{{!list}}" />
+    <block ks:else>
+      <no-data ks:if="{{list.length === 0}}" tips="没有更多数据~"/>
+    </block>
+  </scroll>
+</view>

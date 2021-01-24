@@ -1,24 +1,24 @@
 /*
  * @Author: Li-HONGYAO
  * @Date: 2021-01-23 20:04:07
- * @LastEditTime: 2021-01-24 01:30:22
+ * @LastEditTime: 2021-01-24 19:19:31
  * @LastEditors: Li-HONGYAO
  * @Description:
- * @FilePath: /dp-ksapp-2/components/@lgs/scroll/scroll.js
+ * @FilePath: /ks-app-template/components/@lgs/scroll/scroll.js
  */
 
- /**
-  * # 属性
-  * - height：scroll高度
-  * 
-  * # 事件
-  * - scroll：滚动事件
-  * - load：上拉加载更多事件
-  * - refresh：下拉刷新事件
-  * 
-  * # 提示
-  * 下拉刷新数据请求到之后需调用组件「refreshed」归位状态
-  */
+/**
+ * # 属性
+ * - height：scroll高度
+ *
+ * # 事件
+ * - scroll：滚动事件
+ * - load：上拉加载更多事件
+ * - refresh：下拉刷新事件
+ *
+ * # 提示
+ * 下拉刷新数据请求到之后需调用组件「refreshed」归位状态
+ */
 
 /** 记录手指滑动的距离 */
 let TOUCH_X;
@@ -40,39 +40,38 @@ Component({
     refreshHeight: 0 /** 下拉刷新控件高度 */,
     refreshText: "下拉刷新" /** 下拉刷新提示语 */,
 
-    loadMoreStatus: -1, /** 上拉状态 0-上拉加载更多; 1-加载中; 2-加载完成; 3-没有更多了 */
+    loadMoreStatus: -1 /** 上拉状态 0-上拉加载更多; 1-加载中; 2-加载完成; 3-没有更多了 */,
   },
   lifetimes: {
-    attached() {
-      console.log('scroll height:', this.properties.height);
-    },
+    attached() {},
   },
   methods: {
     loaded(hasMore) {
-      this.setData({ loadMoreStatus: 2});
+      this.setData({ loadMoreStatus: 2 });
       setTimeout(() => {
-        this.setData({ loadMoreStatus: hasMore ? 0 : 3});
+        this.setData({ loadMoreStatus: hasMore ? 0 : 3 });
       }, 500);
     },
     refreshed() {
       TOUCH_Y = 0;
-      this.setData({
-        refreshText: "下拉刷新",
-        refreshHeight: 0,
-        canRefresh: false,
-        scrollTop: 0,
-      });
+      this.setData({ refreshText: "刷新完成" });
+      setTimeout(() => {
+        this.setData({
+          refreshText: "下拉刷新",
+          refreshHeight: 0,
+          canRefresh: false,
+          scrollTop: 0,
+        });
+      }, 500);
     },
     onScroll({ detail: { scrollTop } }) {
       this.triggerEvent("scroll", { scrollTop });
       // 未进入下拉状态时，记录scorll-view滑动距离顶部的距离
-      if (!this.data.canRefresh) {
-        this.setData({ scrollTop });
-      }
+      !this.data.canRefresh && this.setData({ scrollTop });
     },
     onLoad() {
-      if([1, 2, 3].indexOf(this.data.loadMoreStatus) !== -1) return;
-      this.setData({ loadMoreStatus: 1});
+      if ([1, 2, 3].indexOf(this.data.loadMoreStatus) !== -1) return;
+      this.setData({ loadMoreStatus: 1 });
       this.triggerEvent("load");
     },
     onTouchStart(e) {

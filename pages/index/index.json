@@ -5,6 +5,8 @@
     "search": "../../components/@lgs/search/search",
     "title-bar": "../../components/@lgs/title-bar/title-bar",
     "list-item": "../../components/list-item/list-item",
-    "scroll":"../../components/@lgs/scroll/scroll"
+    "scroll":"../../components/@lgs/scroll/scroll",
+    "loading":"../../components/@lgs/loading/loading",
+    "no-data":"../../components/@lgs/no-data/no-data"
   }
 }

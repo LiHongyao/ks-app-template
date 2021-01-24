@@ -1,7 +1,7 @@
 /*
  * @Author: Li-HONGYAO
  * @Date: 2020-11-19 10:06:42
- * @LastEditTime: 2021-01-24 02:15:40
+ * @LastEditTime: 2021-01-24 11:29:25
  * @LastEditors: Li-HONGYAO
  * @Description:
  * @FilePath: /ks-app-template/components/@lgs/app-header/app-header.js
@@ -121,7 +121,6 @@ Component({
       } else {
         rootBackground = bg;
       }
-      console.log(rootBackground);
 
       // 更新数据
       this.setData({

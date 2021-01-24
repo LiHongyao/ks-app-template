@@ -7,7 +7,7 @@
 .lg-loading {
   text-align: center;
 }
-.lg-loading__ct {
+.__ct {
   position: relative;
   width: 128rpx;
   height: 128rpx;
@@ -16,11 +16,11 @@
   justify-content: center;
   align-items: center;
 }
-.lg-loading__logo {
+.__logo {
   width: 44rpx;
   height: 44rpx;
 }
-.lg-loading__icon {
+.__icon {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -28,7 +28,7 @@
   top: 0;
   animation: rotate 1s linear infinite;
 }
-.lg-loading__tips {
+.__tips {
   font-size: 24rpx;
   margin-top: 24rpx;
   letter-spacing: 2rpx;

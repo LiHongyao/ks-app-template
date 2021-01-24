@@ -1,5 +1,11 @@
 
-
+/* 搜索框 */
+.lg-search {
+  margin-top: 16rpx;
+  height: 76rpx;
+  border-radius: 38rpx;
+  border: 4rpx solid #333333;
+}
 /* 轮播图 */
 .banners {
   height: 246rpx;
@@ -12,11 +18,6 @@
 }
 
 
-.item {
-  width: 100%;
-  height: 300rpx;
-  background-color: orange;
-  margin-bottom: 30rpx;
-  opacity: .75;
-  border-radius: 16rpx;
+.list .list-item{
+  margin: 20rpx 0;
 }
